@@ -1,0 +1,30 @@
+using System;
+using SFML.Learning;
+
+class Program : Game
+{
+    static void Main()
+    {
+        InitWindow(800, 600, "Meow");
+
+        while (true)
+        {
+            // 1. Расчет
+            DispatchEvents();
+
+            // Игровая логика
+
+            // 2. Очистка буфера и окна
+            ClearWindow();
+
+            // 3. Отрисовка буфера на окне
+
+            // Вывозв методов отрисовки объектов
+
+            DisplayWindow();
+
+            // 4. Ожидание
+            Delay(1);
+        }
+    }
+}
